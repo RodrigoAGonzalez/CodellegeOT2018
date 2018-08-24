@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >Document</title>
+    <link rel="icon" href="img/icono.jpg" type="image/x-icon">
+</head>
+<body bgcolor= "color: #88ffff">
+
+
+<center>
+        <h1>formulario de registro</h1>
+    <hr>
+        <form  action="">
+            <br>
+            <h2>Datos Personales</h2>
+            <p>Nombre: <input type="text" name="nombre" maxlength="20" required="required" />
+            </p>
+            
+            <p>Apellido paterno: <input type="text" name="apellido_paterno" maxlength="30" required="required"/>
+            </p>
+    
+            <p>Apellido materno: <input type="text" name="apellido_materno" maxlength="30" />
+            </p>
+    
+            <p>Sexo <input type="radio" name="hm" value="h" required="required">hombre <input type="radio" name="hm" 
+            value="m" required="required" >mujer
+            </p>
+    
+            <p>Fecha de nacimiento <input id="date" type="date">
+            </p>
+
+            <p>edad: <input type="number" name="edad" maxlength="3"/></p>
+
+            <p>Estado civil <input type="radio" name="sol" value="sel" required="required">soltero
+                <input type="radio" name="cas" 
+                   value="casd" required="required" >casado <input type="radio" name="otr" 
+                   value="otrs" required="required" >otro
+   
+           </p>
+           
+           <p>Direccion completa <input type="text" name="direccion" 
+            placeholder="Ejemplo: calle,numero ext e int,Colonia,Municipio/delegacion,Estado,Codigo Postal" size="70">
+           
+        </p>
+    
+            <p>Telefono: <input type="number" name="numero" maxlength="11"
+            minlength="8" required="required"/>
+            </p>
+    
+
+            <p>Tipo de Actividad Turistica que Gustaria Realizar<input type="text" name="deporte"/>
+            </p>
+    
+            <p>Correo electronico: <input type="text" name="correo" required="required"/>
+            </p>
+            <br>
+            <h2>Datos de preferencias Turisticas</h2>
+    
+            <p>Tipo de lugar turistico</p>
+    
+                <select>
+                        <option>Montaña</option>
+                        <option>Playa</option>
+                        <option>Pueblo magico</option>
+                        <option>Ciudad</option>
+                        <option>Deportes extremos</option>
+                </select>
+            <p>Cantidad monetaria a Ivertir en Viaje</p>    
+                <select>
+                        <option>$5000 - $7000</option>
+                        <option>$7000 - $10000</option>
+                        <option>$10000 - $15000</option>
+                        <option>$15000 - o mas</option>
+                </select>
+                
+                <p>Preferenica en Forma de viajar </p>    
+                <select>
+                        <option>Autobus</option>
+                        <option>Avion</option>
+                </select>
+
+                <p>Categoria de Hotel</p>    
+                <select>
+                        <option>Hoteles de 5 Estrellas</option>
+                        <option>Hoteles de 4 Estrellas</option>
+                        <option>Hoteles de 3 Estrellas</option>
+                        <option>Hoteles de 2 Estrellas</option>
+                        <option>Hoteles de 0/1 Estrellas</option>
+                </select>
+
+    <br>
+    <br>
+    <br>
+            <input type="submit" value="enviar"/>
+            <input type="reset" value="borrar">
+        </form>
+        <br><br>
+    </center>
+
+    
+</body>
+</html>
