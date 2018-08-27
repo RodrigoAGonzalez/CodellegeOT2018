@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Ejemplo de cómo programar un formulario,
+se requiere un archivo php para ser donde se recibira la informacion metida en el formulario -->
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+</head>
+
+<body>
+  <form action="ejemplo.php" method="get">
+    <p> Nombre (s) <input type="text" name="Nombre" maxlength="15" size="20" required="required" placeholder="Nombre"> </p>
+    <p> Apellido paterno <input type="text" name="Apellido paterno" maxlength="30" size="20" placeholder="Apellido paterno"> </p>
+    <p> Apellido materno <input type="text" name="Apellido materno" maxlength="30" size="20" placeholder="Apellido materno"> </p>
+    <p required="required"> Sexo:
+      <input type="radio" name="hm" value="H"> Hombre
+      <input type="radio" name="M" value="M"> Mujer
+    </p>
+    <p>
+      Fecha de nacimiento: <input id="date" type="date">
+    </p>
+<p>
+  Teléfono:
+  <input type="text" name="Teléfono" placeholder="8111111111" minlenght="10" maxlength="13" required="required">
+  <p> Empleo (si no, dejar en blanco) <input type="text" name="Empleo" maxlength="30" size="40" placeholder="Ejemplo: Programador, Matemático, Actuario, etc."> </p>
+  <p> ¿Practicas algun deporte? (si no, dejar en blanco) <input type="text" name="Deporte" maxlength="30" size="40" placeholder="Ejemplo: Ninguno, Nadador, Handball, etc."> </p>
+<p>
+  Edad <input type="text" name="Edad" minlenght="0" maxlength="3" placeholder="Edad">
+</p>
+  <p> Correo <input type="email" name="Correo" maxlength="30" size="20" placeholder="Correo">
+  </p>
+  <p required="required"> Tipo sanguíneo:<br>
+    <select name="menu">
+      <option value="0"></option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="AB">AB</option>
+      <option value="-A">-A</option>
+      <option value="-B">-B</option>
+      <option value="-AB">-AB</option>
+      <option value="0">0</option>
+      <option value="-0">-0</option>
+      <option value="No sé">No sé</option>
+</select>
+</p>
+  <p required="required"> ¿Eres donador?:
+    <input type="radio" name="Sí" value="Sí"> Sí
+    <input type="radio" name="No" value="No"> No
+  </p>
+  <p>
+    <input type="submit" name="Enviar" value="Enviar">
+    <input type="Reset" name="Borrar" value="Borrar">
+
+  </p>
+
+</form>
+</body>
+
+</html>
