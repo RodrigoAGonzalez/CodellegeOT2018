@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5 | Formularios</title>
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+    <form action="ejemplo.php" method="get">
+        <span>Nombre:</span><input type="text" name="nombre" maxlength="20" required="required">
+        <span>Apellido paterno:</span> <input type="text" name="lnp" maxlength="30" required="required">
+        <span>Apellido materno:</span> <input type="text" name="lnm" maxlength="30" required="required">
+        <p>Sexo: 
+        <input type="radio" name="gender" value="h" required="required">Hombre
+        <input type="radio" name="gender" value="m" required="required">Mujer
+        <input type="radio" name="gender" value="o" required="required">Otre
+        </p>
+        <p>Fecha de nacimiento: <input type="date" id="date" name="born"></p>
+        <p>Teléfono: <input type="number" name="phone" maxlength="11" minlength="8"></p>
+        <p>Empleo: <input type="text" name="job"></p>
+        <p>Algún deporte que practique: <input type="text" name="sport"></p>
+        <p>Edad: <input type="number" name="age"></p>
+        <p>Correo: <input type="text" name="email" required="required"></p>
+        <p>Tipo de sangre: 
+        <select name="btype" required="required"> 
+            <option value="0">O</option>
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">AB</option>
+        </select>
+        <input type="text" name="btype2" placeholder="Positivo o Negativo" required="required">
+        </p>
+        <p>¿Eres donador?: 
+        <input type="radio" name="db" value="Y" required="required">Si
+        <input type="radio" name="db" value="N" required="required">No
+        </p>
+        <p>Estado civil: 
+        <select name="status" required="required"> 
+            <option value="0">Soltero/a</option>
+            <option value="1">Casado/a</option>
+            <option value="2">Divorciado/a</option>
+            <option value="3">Viudo/a</option>
+        </select>
+        </p>
+        <p>Dirección: <input type="text" name="address"></p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
