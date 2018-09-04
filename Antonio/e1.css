@@ -40,14 +40,7 @@
     border: 2px solid black;
 
     }
-  
-   .back{
-      border-radius: 0;
-      border: 0;
-      position: fixed;
-      z-index: 1999;
 
-}
 
     .div2{
 
@@ -55,7 +48,7 @@
     width: 100vw;
     height: 100vh;
     background-image: url("img/hoja.gif");
-    z-index: 19999;
+
       border: 0;
 
     }
