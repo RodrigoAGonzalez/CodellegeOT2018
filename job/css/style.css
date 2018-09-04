@@ -1,0 +1,14 @@
+body {
+  background-image: url("../back.jpg");
+  background-size: 50vw 50vh;
+  background-repeat: repeat;
+}
+
+h2 {
+  color: #5F9EA0;
+}
+div{
+  display: inline-block;
+
+  height: 20rem;
+  width: 40rem;
