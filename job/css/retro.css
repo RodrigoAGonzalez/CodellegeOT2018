@@ -1,0 +1,48 @@
+h1{
+  color: #FF8C00;
+  border: 30px 230px;
+  border-color: #FF8C00;
+text-decoration: underline;
+
+}
+body{
+  background-color: #000000
+}
+h1, main, footer{
+  text-align: center;
+}
+footer{
+  color: #FF8C00;
+}
+#nombres{
+  border: 2px solid #FF8C00;
+  display: inline-block;
+  width: 360px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 100px;
+  color: #FF8C00;
+  text-align: left;
+}
+input[type=text]
+{
+  width: 250px;
+  height: 30px;
+  margin-right:10px;
+}
+button {
+  width: 105px;
+  height: 35px;
+}
+.etiquetaNombre{
+  border: solid 1px white;
+  height: 25px;
+  text-indent: 1rem;
+  line-height: 22px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.icono{
+  width: 10px;
+  height: 10px;
+}
