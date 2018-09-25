@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    .encabezado
+    {
+      position: absolute;
+      margin-left: 30vw;
+      top: 10px;
+    }
+
+    div
+    {
+      width: 300px;
+      height: 100px;
+      background: #F2F3F4;
+
+    }
+
+    #contenedor
+    {
+      position: absolute;
+      top:98px;
+      margin-left: 30vw;
+      
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>
+    <h1>Comentarios con JS</h1>
+    </header>
+    <main id="main">
+
+    Nombre:
+    <br>
+    <input id="Nombre" type="text" placeholder="Nombre" name="Nombre" >
+    <br>
+    Apellidos:
+    <br>
+    <input id="Apellidos" type="text" placeholder="Apellidos" name="Apellidos">
+    <br>
+    Fecha:
+    <br>
+    <input id="Fecha" type="date" name="Fecha">
+    <br>
+    <h2 class="encabezado">Comentarios</h2>
+    Comentarios:
+    <br>
+    <textarea id="Comentarios"></textarea>
+    <br>
+    <input onclick="agregarNombre()" type="submit" value="Enviar">
+    <input type="button" value="Borrar" onclick="Borrar()">
+    <br><br>
+    <div id="contenedor"></div>
+    </main>
+    <footer>
+    </footer>
+  </body>
+
+  <script>
+    function agregarNombre(){
+      var contenedor = document.getElementById('contenedor');
+      var nombre = document.getElementById('Nombre');
+      var apellidos = document.getElementById('Apellidos');
+      var fecha = document.getElementById('Fecha');
+      var comentarios = document.getElementById('Comentarios');
+      var imprimirNombre = nombre.value ;
+      var imprimirApellidos = apellidos.value ;
+      var imprimirFecha = fecha.value ;
+      var imprimirComentarios = comentarios.value ;
+      contenedor.innerHTML += '' +
+      '<div class="contenedor">' +
+      imprimirNombre +
+      ' ' +
+      imprimirApellidos +
+      ' ' +
+      imprimirFecha +
+      ' ' +
+      imprimirComentarios
+      '</div>';
+    }
+
+    function Borrar(){
+      document.getElementById('contenedor').value = '';
+      document.getElementById('Nombre').value = '';
+      document.getElementById('Apellidos').value = '';
+      document.getElementById('Fecha').value = '';
+      document.getElementById('Comentarios').value = '';
+    }
+      </script>
+</html>
