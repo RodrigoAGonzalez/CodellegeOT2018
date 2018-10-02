@@ -1,6 +1,6 @@
 body {
-  background-image: url("../back.jpg");
-  background-size: 50vw 50vh;
+  background-image: url("../tapizcal.jpg");
+  background-size: cover;
   background-repeat: repeat;
 }
 
