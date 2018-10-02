@@ -1,0 +1,27 @@
+body{
+  background-color: gray;
+}
+
+header{
+  text-decoration: underline;
+  text-align: center;
+  background-color: black;
+  color: orange;
+}
+
+.cuadro{
+height: 20vw;
+width: 100%;
+}
+.cuadro1{
+  background-color: yellow;
+}
+.cuadro2{
+  background-color: green;
+}
+.cuadro3{
+  background-color: orange;
+}
+.cuadro4{
+  background-color: red;
+}

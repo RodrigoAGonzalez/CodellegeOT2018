@@ -1,0 +1,102 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="parpadeo.css">
+    </head>
+    <body>
+        <header>
+    <h1>Titulo</h1>
+        </header>
+        <main id="main">
+                
+    
+        </main>
+    
+    
+        <footer>CEYA</footer>
+    </body>
+    <script>
+       var main = document.getElementById("main");
+       var divRed = document.createElement("div");
+       var divBlue = document.createElement("div");
+       var divGreen = document.createElement("div");
+
+       divRed.className = "box";
+       divBlue.className = "box";
+       divGreen.className = "box";
+
+       main.appendChild(divRed);
+       main.appendChild(divBlue);
+       main.appendChild(divGreen);
+       main.innerHTML += "<div class='lim'></div>";
+       var
+       var colorAzul=0;
+       var color = 0;
+       inc = -1;
+
+
+       setInterval(function () {
+           if(color == 255 || color == 0) {
+               inc *=-1;
+           }
+       main.innerHTML ="";
+       divRed.style.background = "rgb(" + color + ",0,0)";
+       main.appendChild(divRed);
+      // divBlue.style.background = "rgb(0, 0," + color + ")";
+       main.appendChild(divBlue);
+       //divGreen.style.background = "rgb(0," + color + ",0)";
+       main.appendChild(divGreen);
+
+       main.innerHTML+= "<div class='lim'></div>";
+       color+= inc;
+       
+}, 3);
+
+     setInterval(function () {
+           if(color == 255 || color == 0) {
+               inc *=-1;
+           }
+       main.innerHTML ="";
+       divRed.style.background = "rgb(" + color + ",0,0)";
+       main.appendChild(divRed);
+      // divBlue.style.background = "rgb(0, 0," + color + ")";
+       main.appendChild(divBlue);
+       //divGreen.style.background = "rgb(0," + color + ",0)";
+       main.appendChild(divGreen);
+
+       main.innerHTML+= "<div class='lim'></div>";
+       color+= inc;
+       
+}, 9);
+
+     setInterval(function () {
+           if(color == 255 || color == 0) {
+               inc *=-1;
+           }
+       main.innerHTML ="";
+       divRed.style.background = "rgb(" + color + ",0,0)";
+       main.appendChild(divRed);
+      // divBlue.style.background = "rgb(0, 0," + color + ")";
+       main.appendChild(divBlue);
+       //divGreen.style.background = "rgb(0," + color + ",0)";
+       main.appendChild(divGreen);
+
+       main.innerHTML+= "<div class='lim'></div>";
+       color+= inc;
+       
+}, 15);
+
+
+
+       
+           </script>
+    
+
+
+
+
+
+
+</html>

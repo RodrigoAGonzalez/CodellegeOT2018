@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script type="text/javascript">
+  function getInfo(){
+    var nombre = document.getElementById('nombre');
+    var apellido = document.getElementById('apellido');
+    var fecha = document.getElementById('fecha');
+    var comentario = document.getElementById('comentario');
+    var wrapper = document.getElementById('wrapper');
+    wrapper.innerHTML +='<div class= "divcomentarios">'+ "Nombre:"+ Nombre+"<br/>Aperllido:"+ Aperllido+"<br/>Fecha:"+ Fecha +"<br/>Comentario:"+ Comentario + "<br/>wrapper:"+ wrapper </div>
+  }
+  function limpiar(){
+    document.getElementById('wrapper').innerHTML = <h2>caja de comentarios  </h2>';
+    document.getElementById('nombre').value ='';
+    document.getElementById('apellido').value ='';
+    document.getElementById('fecha'). value = '';
+    document.getElementById('comentario').value = '';
+    }
+  </script>
+  <body>
+  <h1>Formulario</h1>
+    <main>
+    <div>
+Nombre: input class="fuentepequeña"type="text"id="nombre" placeholder="ingresa tu nombre"/><br/>
+Aperllido: input class="fuentepequeña"type="text"id="apellido" placeholder="ingresa tu apellido"/><br/>
+Nombre: input class="fuentepequeña"type="text"id="nombre" placeholder="ingresa tu nombre"/><br/>
+Nombre: input class="fuentepequeña"type="text"id="nombre" placeholder="ingresa tu nombre"/><br/>
+</div>
+
+
+
+
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="paglun24.css">
+  </head>
+  <body>
+    <header>
+      <h1>JOB</h1>
+    </header>
+<main>
+  Nùmero de renglones: <input>
+  <button onclick= "Gen()"> Gen </button>
+
+<div id="rows">
+
+</div>
+
+</main>
+
+  </body>
+<script type="text/javascript">
+fuction Gen(){
+  var div = document.getElementById('rows');
+  var cantidad = document.getElementById('cantidad');
+  var num = cantidad.value;
+  num = parseInt(num);
+
+  for (var i = 0; i < num; i++)
+{
+  var renglon = document.createElement("div");
+renglon.className = "Row";
+renglon.style.background="rgb("+r+","+g+","+b+");
+
+r = r == 255 ? 0 : r + 5;
+g = g == 255 ? 0 : g + 3;
+b = b == 255 ? 0 : b + 15;
+div.appendChild(renglon)
+</script>
+}
+</html>

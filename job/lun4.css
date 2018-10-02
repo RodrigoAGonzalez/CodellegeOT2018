@@ -1,0 +1,50 @@
+.box
+{
+float: left;
+height: 200px;
+width: 200px;
+margin-right: 10px;
+margin-top: 10px;
+}
+.lim
+{
+    clear: both;
+}
+.green
+{
+    background-color: darkgreen
+}
+.black
+{    background-color: rgba(7, 7, 5, 0.932) 
+}
+.red
+{
+    background-color: darkred }
+.blue
+{
+    background-color: rgb(25, 14, 173)
+}
+.orange
+{
+    background-color: rgb(214, 134, 13)
+}
+.purple
+{
+    background-color: rgb(113, 19, 177)
+}
+.yellow
+{
+    background-color: rgb(235, 238, 36)
+}
+.brown
+{
+    background-color: rgb(177, 90, 19)
+}
+.light
+{
+    background-color: rgb(26, 203, 226)
+}
+.pink
+{
+    background-color: rgb(177, 19, 106)
+}

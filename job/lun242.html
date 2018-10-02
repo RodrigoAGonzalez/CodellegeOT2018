@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="lun242.css">
+  </head>
+  <body onload="Gen()">
+    <header>
+      <h1>JOB</h1>
+    </header>
+<main>
+
+<div id="rows"></div>
+
+</main>
+
+  </body>
+<script type="text/javascript">
+function Gen()
+{
+  var r = 0, g = 0,b = 0;
+  var max = 768;
+  var working = true;
+  var count = 0;
+
+  var div = document.getElementById('rows');
+  var color = setInterval(()=>{
+    if (working)
+    clearInterval(color);
+
+var renglon = document.createElement('div');
+renglon.className = "cuadro";
+renglon.style.background="rgb("+r+","+g+","+b+")";
+
+r = r == 255 ? 0 : r + 5;
+if (r == 255)
+    g = g == 255? 255:g +1
+    if (r == 255 && g == 255)
+      b = b == 255 ? 255: b +1
+g = g == 255 ? 0 : g + 3;
+b = b == 255 ? 0 : b + 15
+
+div.appendChild(renglon);
+
+}
+}
+</script>
+</html>

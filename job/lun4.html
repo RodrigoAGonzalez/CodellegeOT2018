@@ -1,0 +1,60 @@
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="lun4.css">
+</head>
+<body>
+    <header>
+<h1>Titulo</h1>
+    </header>
+    <main id="main">
+            
+
+    </main>
+
+
+    <footer>CEYA</footer>
+</body>
+<script>
+   function cuadros()
+   {
+       var colors =
+       [ "green",
+        "black",
+        "red",
+        "blue",
+        "orange",
+        "purple",
+        "yellow",
+        "brown",
+        "ligth",
+        "pink"];
+
+
+        console.log(document.body.innerHTML);
+        var posicionColor = 0;
+        var maxColors = colors.length - 1;
+        var main = document.getElementById('main');
+        for (var i = 0; i < 100; i++) 
+        {
+            main.innerHTML += '<div class="box ' +
+            colors[posicionColor] + '"></div>'
+            
+            if(posicionColor == maxColors)
+            {
+                posicionColor = 0;
+            }
+            else
+            {
+                posicionColor++;
+            }
+        
+            main.innerHTML += '<div class="clear"></div>';
+        }  
+        main.innerHTML += '<div class="lim"></div>';
+    }
+cuadros();
+</script>
+
+</html>
