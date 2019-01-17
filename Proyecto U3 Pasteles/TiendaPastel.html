@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>Carrito</title>
+<link rel="stylesheet" type="text/css" href="estilopastel.css">
+<script type="text/javaScript" src="codigopastel.js"> </script>
+</head>
+<body>
+        <div class="carrito">
+                <b><label for="Name">Carrito de compra:</label></b></br>
+                <label for="Name">CheeseCake</label>
+                <p id="a">0</p>
+
+                <label for="Name">Chocolate</label>
+                <p id="b">0</p>
+                
+                <label for="Name">Tres leches</label>
+                <p id="c">0</p>
+                
+                <label for="Name">Coco</label>
+                <p id="d">0</p>
+                
+                <label for="Name">Rollo Mango</label>
+                <p id="e">0</p>
+                
+                <label for="Name">Subtotal</label>
+                <p id="f">0</p>
+                
+                <label for="Name">Iva</label>
+                <p id="g">0</p>
+                
+                <label for="Name">Total</label>
+                <p id="h">0</p>
+                
+                <input type="button" name="FirstName" onclick="Borrar();" value="Borrar pedido">
+            </div>
+<p><strong>Tienda de Postres</strong><br />
+</p>
+<table width="700" border="1" cellspacing="1" cellpadding="5" style="font: 10pt Verdana, Geneva, Arial, Helvetica, sans-serif;">
+<tbody>
+<tr style="font: bold">
+<td width="20" >Foto </td>
+<td width="100" >Producto</td>
+<td width="80" >Precio</td>
+<td width="150" >Control</td></tr>
+<tr>
+<td><img src="cheesecake.png" width="93" height="113" border="1" alt="CheeseCake" /></td>
+<td valign="top" style="font: 9pt; text-align: justify;"><b>CheeseCake</b></td>
+<td valign="top" id="Cheese" value="Cheese">280 $ </td>
+<td valign="top">
+  <table>
+<tr>
+<td colspan="3" align="center" style="font: 7pt; color: #191970;">Indique cantidad</td></tr>
+<tr><td>
+<form action="" name="order" id="order">
+<input onclick="meterencarro(this.form)" type="button" id="boton" value="Adquirir" /><br />
+
+<input type="button" name="FirstName" onclick="operacion1();"  value="Añadir al carrito">
+
+<input maxlength="2" id="chess" size="2" value="0" name="numpedido" /><br />
+
+<input type="hidden" value="280" name="precio" id="Cheese"/>
+<input type="hidden" value="CheeseCake" name="producto" /> 
+<input type="hidden" value="ID101" name="referencia" />
+</form>
+</td></tr></table>
+</td></tr>
+<tr>
+<td><img src="chocake.jpg" width="88" height="104" border="1" alt="chocolate" /></td>
+<td valign="top" style="font: 9pt; text-align: justify;"><b>Pastel de Chocolate</b></td>
+<td valign="top">300 $</td>
+<td valign="top">
+<table>
+<tr>
+<td colspan="3" align="center" style="font: 7pt; color: #191970;">Indique cantidad</td></tr>
+<tr><td>
+<form action="" name="order" id="order">
+<input onclick="meterencarro(this.form)" type="button" id="boton" value="Adquirir" /><br />
+<input type="button" name="FirstName" onclick="operacion1();"  value="Añadir al carrito">
+<input maxlength="2" id="choc" size="2" value="0" name="numpedido" /><br />
+<input type="hidden" value="300" name="precio" />
+<input type="hidden" value="Pastel de Chocolate" name="producto" /> 
+<input type="hidden" value="ID201" name="referencia" />
+</form>
+</td></tr></table>
+</td>
+</tr>
+<tr>
+<td><img src="tresLeches.jpg" width="84" height="110" border="1" alt="tresLeches" /></td>
+<td valign="top" style="font: 9pt; text-align: justify;"><strong>Pastel de tres leches</strong></td>
+<td valign="top">250 $ </td>
+<td valign="top">
+<table>
+<tr>
+<td colspan="3" align="center" style="font: 7pt; color: #191970;">Indique cantidad</td></tr>
+<tr><td>
+<form action="" name="order" id="order">
+<input onclick="meterencarro(this.form)" type="button" id="boton" value="Adquirir" /><br />
+<input type="button" name="FirstName" onclick="operacion1();"  value="Añadir al carrito">
+<input maxlength="2" id="tres" size="2" value="0" name="numpedido" /><br />
+
+<a href="pedido.html"><img src="imagenes/varcarro.jpg" width="79" height="23" border="0" alt="" /></a><br />
+<input type="hidden" value="250" name="precio" />
+<input type="hidden" value="Pastel de Tres Leches" name="producto" /> 
+<input type="hidden" value="ID33" name="referencia" />
+</form>
+</td></tr></table>
+</td>
+</tr>
+<tr>
+<td><img src="cocoCake.jpg" width="71" height="107" border="1" alt="coco" /></td>
+<td valign="top" style="font: 9pt; text-align: justify;"><b>Pastel de Coco</b><b></b></td>
+<td valign="top">300 $ </td>
+<td valign="top">
+<table>
+<tr>
+<td colspan="3" align="center" style="font: 7pt; color: #191970;">Indique cantidad</td></tr>
+<tr><td>
+<form action="" name="order" id="order">
+<input onclick="meterencarro(this.form)" type="button" id="boton" value="Adquirir" /><br />
+<input type="button" name="FirstName" onclick="operacion1();"  value="Añadir al carrito">
+<input maxlength="2" id="co" size="2" value="0" name="numpedido" /><br />
+
+<input type="hidden" value="300" name="precio" />
+<input type="hidden" value="Pastel de Coco" name="producto" /> 
+<input type="hidden" value="ID402" name="referencia" />
+</form>
+</td></tr></table>
+</td>
+</tr>
+<tr>
+<td><img src="rolloMango.jpg" width="76" height="105" border="1" alt="rolloMango" /></td>
+<td valign="top" style="font: 9pt; text-align: justify;"><b>Rollo de Mango</b><b></b></td>
+<td valign="top">500 $ </td>
+<td valign="top">
+<table>
+<tr>
+<td colspan="3" align="center" style="font: 7pt; color: #191970;">Indique cantidad</td></tr>
+<tr><td>
+<form action="" name="order" id="order">
+<input onclick="meterencarro(this.form)" type="button" id="boton" value="Adquirir" /><br />
+<input type="button" name="FirstName" onclick="operacion1();"  value="Añadir al carrito">
+<input maxlength="2" id="man" size="2" value="0" name="numpedido" /><br />
+
+<input type="hidden" value="500" name="precio" />
+<input type="hidden" value="Rollo de Mango" name="producto" /> 
+<input type="hidden" value="ID02" name="referencia" />
+</form>
+</td></tr></table>
+</td>
+</tr>
+</tbody></table>
+</body>
+</html>

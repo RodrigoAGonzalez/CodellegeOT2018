@@ -1,0 +1,349 @@
+
+.carrito{
+    background: pink;
+}
+table{
+    background: pink;
+}
+body{
+
+     background:url("https://www.decoiluzion.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/J/U/JUL18894126.jpg"); 
+         font-family: "Segoe UI", sans-serif;
+    font-size:100%;
+}
+#a{
+
+ position: fixed;
+    right: 18%;
+    bottom: 91.5%;
+    font-family: sans-serif, serif;
+}
+#b{
+
+ position: fixed;
+    right: 18%;
+    bottom: 88.5%;
+    font-family: sans-serif, serif;
+}
+#c{
+
+ position: fixed;
+    right: 18%;
+    bottom: 85.5%;
+    font-family: sans-serif, serif;
+}
+#d{
+
+ position: fixed;
+    right: 18%;
+    bottom: 83.5%;
+    font-family: sans-serif, serif;
+}
+#e{
+
+ position: fixed;
+    right: 18%;
+    bottom: 81%;
+    font-family: sans-serif, serif;
+}
+#f{
+
+ position: fixed;
+    right: 18%;
+    bottom: 77.8%;
+    font-family: sans-serif, serif;
+}
+#g{
+
+ position: fixed;
+    right: 18%;
+    bottom: 75.3%;
+    font-family: sans-serif, serif;
+}
+
+#h{
+
+ position: fixed;
+    right: 18%;
+    bottom: 73%;
+    font-family: sans-serif, serif;
+}
+.carrito{
+  
+    width: 25%;
+    height: 45vh;
+    position: fixed;
+    right: 5%;
+    font-family: sans-serif, serif;
+    border: 2px solid pink;
+    
+}
+
+.cuadro{
+    position: fixed;
+    right: 75%;
+    bottom: 60%;
+    font-family: sans-serif, serif;
+}
+.choco{
+ position: fixed;
+    right: 40%;
+    bottom: 60%;
+    font-family: sans-serif, serif;
+}
+.tresL{
+ position: fixed;
+    right: 75%;
+    bottom: 10%;
+    font-family: sans-serif, serif;
+}
+.coCa{
+ position: fixed;
+    right: 40%;
+    bottom: 10%;
+    font-family: sans-serif, serif;
+}
+.roMa{
+     position: fixed;
+    right: 10%;
+    bottom: 10%;
+    font-family: sans-serif, serif;
+}
+
+.Inicios{
+    background: #636363;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a2ab58, #636363);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a2ab58, #636363); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    position: fixed;
+    width: 65%;
+    height: 70%;
+    right: 30%;
+    bottom: 10%;
+    font-family: sans-serif, serif;
+}
+.Musica{
+    position: fixed;
+     top:62%;
+    left:77%;
+}
+.Escudo_oficial{
+   
+  width: 40%;
+  height: 100%;
+  position: fixed;
+    top:0%;
+    bottom:15%;
+    left:76%;
+ background: #003973;
+background: -webkit-linear-gradient(to bottom, #E5E5BE, #003973);  
+background: linear-gradient(to bottom, #E5E5BE, #003973); 
+
+}
+.Escudo{
+    top:0%;
+    bottom:15%;
+    left:70%;
+   
+}
+
+.Titulo{
+  
+    background: #ADA996;  
+    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+
+    height: 10%;
+    border-radius: 40px;
+}
+
+.Logo
+{
+	width: 70%;
+	height: 3%;
+	margin:3%,4%; 
+	border:3% line #000;
+	padding: 3%;
+    position: absolute;
+    top:3%;
+    bottom:1%;
+    left:25%;
+}
+.Home
+  {
+	width: 70%;
+	 background: #ADA996;  
+    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    color:black;
+	height: 3%;
+	margin:3%,4%; 
+	border:3% line #000;
+	border-radius: 40px;
+	padding: 3%;
+    position: absolute;
+    top:25%;
+    bottom:1%;
+    left:10%;
+} 
+.Tienda
+  {
+    width: 70%;
+     background: #ADA996;  
+    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    color:black;
+    height: 3%;
+    margin:3%,4%; 
+    border:3% line #000;
+    border-radius: 40px;
+    padding: 3%;
+    position: absolute;
+    top:36%;
+    bottom:1%;
+    left:10%;
+} 
+.Imagenes
+  {
+	width: 70%;
+	 background: #ADA996;  
+    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    color:black;
+	height: 3%;
+	margin:3%,4%; 
+	border:3% line #000;
+	border-radius: 40px;
+	padding: 3%;
+    position: absolute;
+    top:48%;
+    bottom:1%;
+    left:10%;
+} 
+.links
+  {
+	width: 70%;
+	 background: #ADA996;  
+    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    color:black;
+	height: 3%;
+	margin:3%,4%; 
+	border:3% line #000;
+	border-radius: 40px;
+	padding: 3%;
+    position: absolute;
+    top:60%;
+    bottom:1%;
+    left:10%;
+} 
+.Contacto{
+    width: 70%;
+     background: #ADA996;  
+    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    color:black;
+    height: 3%;
+    margin:3%,4%; 
+    border:3% line #000;
+    border-radius: 40px;
+    padding: 3%;
+    position: absolute;
+    bottom:10%;
+    left:10%;
+}
+.Camp
+  {
+    width: 70%;
+     background: #ADA996;  
+    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    color:black;
+    height: 3%;
+    margin:3%,4%; 
+    border:3% line #000;
+    border-radius: 40px;
+    padding: 3%;
+    position: absolute;
+    top:73%;
+    bottom:1%;
+    left:10%;
+} 
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #333333; 
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  
+    background: linear-gradient(to right, #dd1818, #333333); 
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:"border-box";
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.sidebar a:hover{
+    color:black;
+    background-color: #f90;
+
+}
+
+
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: white;
+    font-size:1rem;   
+    position: absolute;
+    background: #fc4a1a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#cerrar {
+    display:none;
+}

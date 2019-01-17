@@ -1,0 +1,27 @@
+body {
+    background: pink;
+    font: 10pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+#inputs {
+    border:1px inset rgb(153,204,255);
+    width: 40px;
+    background:rgb(243, 133, 206);
+    text-align : center;
+}
+#boton  {
+    background: rgb(252, 144, 243);
+    border:1px outset rgb(153,204,255);
+    width: 80px;
+    font : 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+    background-color : #FFFACD;
+    color : #4B0082;
+}
+.carrito{
+ width: 25%;
+ height: 45vh;
+ position: fixed;
+ right: 5%;
+ font-family: sans-serif, serif;
+ border: 2px solid pink;
+ display: block;
+}
