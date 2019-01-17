@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio guardar nombre</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        input, textarea{
+            display: block;
+            
+        } 
+        .divComentarios{
+            border: 1px solid rgb(248, 46, 181);
+            background: rgb(169, 214, 238);
+            height: 25vh;
+            width: 30vw;
+            word-wrap: break-word;
+        
+
+        }
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:rgb(221, 92, 135);
+            background: rgb(240, 167, 243);
+        }
+        h2{
+            color: rgb(236, 93, 141);
+        }
+        #wrapper{
+            position: absolute;
+            top: 0;
+            margin-left: 30%;
+            overflow: auto;
+            width: 40vw;
+            height: 60vw;
+            color: rgb(3, 27, 63);
+        }
+        
+        
+        
+        
+    </style>
+    <script>
+        function getInfo(){
+        var nombre = document.getElementById('nombre').value;
+        var apellido = document.getElementById('apellido').value;
+        var fecha = document.getElementById('fecha').value;
+        var comentario = document.getElementById('comentario').value;
+
+        var wrapper = document.getElementById('wrapper');
+        //var div = document.createElement('div');
+        //div.className('divComentarios');
+        //div.innerText += nombre + apellido + fecha + comentario;
+        //wrapper.appendChild(div)
+        wrapper.innerHTML += '<div class="divComentarios">' + 
+                                'Nombre: ' + nombre + '<br>'+
+                                'Apellido: ' + apellido + '<br>' +
+                                'Fecha: ' + fecha + '<br>' +
+                                'Comentario: ' + comentario +
+                                '</div>';
+    }
+
+    function Limpiar(){
+        document.getElementById('wrapper').innerHTML = '<h2>Caja de comentarios</h2>';
+        document.getElementById('nombre').value = '';
+        document.getElementById('apellido').value = '';
+        document.getElementById('fecha').value = '';
+        document.getElementById('comentario').value = '';
+    }
+    
+    
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio guardar nombre</h1>
+    </header>
+
+    <main id="main">
+        <div id="input">
+            <input type="text" name="escribir" id="nombre" placeholder="escribe tu nombre"><br>
+            <input type="text" name="escribir" id="apellido" placeholder="escribe tu apellido">
+            <p><b>Selecciona le fecha de hoy: <input id="fecha" type="date"></p></b>
+            <b>Comentarios:</b><textarea id="comentario"></textarea><br>
+
+            <input type="button" value="Guardar" onclick="getInfo();"><br>
+            <input  class="borrar" type="button" value="Borrar"  onclick="Limpiar();">
+        </div>
+
+        <div></div>
+
+        <div id="wrapper">
+            <h2>Caja de comentarios</h2>
+        </div>
+
+        </div>
+</body>
+
+</html>

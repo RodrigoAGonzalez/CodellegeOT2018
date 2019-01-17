@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cuadritos (JS)</title>
+    <link rel="icon" href="catss.jpg" type="image/x-icon">
+    <style>
+        .cuadrito1 {
+            background: pink;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin-right: 4px;
+            margin-top: 2px;
+            border: 2px solid black;
+        }
+        .green{
+            background: rgb(57, 204, 57);
+        }
+        .white{
+            background: rgb(255, 255, 255);
+        }
+        .red{
+            background: rgb(211, 54, 54);
+        }
+        .rosita{
+            background: rgb(230, 117, 136);
+        }
+        .morado{
+            background: rgb(218, 75, 218);
+        }
+        .amarillo{
+            background: rgb(252, 252, 3);
+        }
+        .gris{
+            background: rgb(133, 130, 130);
+        }
+        .azul{
+            background: rgb(2, 2, 121);
+        }
+        .celeste{
+            background: rgb(79, 198, 245);
+        }
+        .naranja{
+            background: rgb(255, 76, 5);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+
+    <main id="main">
+        <div class = "cuadrito1"></div>
+    </main>
+
+    <script>
+        function cuadros(){
+        var colores = 
+        [
+            'green',
+            'white',
+            'red',
+            'rosita',
+            'morado',
+            'amarillo',
+            'gris',
+            'azul',
+            'celeste',
+            'naranja'
+        ];
+        //var cuenta = 1;
+        var posicionColor = 0;
+        var maxColores = colores.length -1;
+        var main = document.getElementById('main');
+        main.innerHTML += "<div>Hola Mundo</div>"
+        for(i=0; i<24; i++){
+            main.innerHTML+='<div class="cuadrito1 '+ colores[posicionColor] +'"></div>'
+        /*switch( cuenta ){
+            case 1: main.innerHTML+="<div class='cuadrito1 green'></div>"
+            break;
+            case 2: main.innerHTML+="<div class='cuadrito1 white'></div>"
+            break;
+            case 3: main.innerHTML+="<div class='cuadrito1 red'></div>"
+            break;
+        }*/
+        if(posicionColor ==maxColores){
+            posicionColor = 0;
+        }
+        else{
+            posicionColor++;
+        }
+        }
+        }
+        /* un solo color de los cuadritos
+        main.innerHTML += "<div class='cuadrito1'></div>"
+        main.innerHTML += "<div class='cuadrito1'></div>"
+        main.innerHTML += "<div class='cuadrito1'></div>"
+        main.innerHTML += "<div class='cuadrito1'></div>"
+        main.innerHTML += "<div class='cuadrito1'></div>"
+        */
+            /* varios colores de los cuadritos
+            "<div class = 'cuadrito1'>" +
+            "</div>" +
+            "<div class = 'cuadrito2'>" +
+            "</div>" +
+            "<div class = 'cuadrito3'>" +
+            "</div>" +
+            "<div class = 'cuadrito4'>" +
+            "</div>" +
+            "<div class = 'cuadrito5'>" +
+            "</div>";
+            */
+        cuadros();
+    </script>
+
+    <footer>
+        <p>@Magaly</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+ {   
+    "hobbies": [{
+
+        "nombre": "Hobbie",
+        "descripcion": "ver anime",
+        "imagen": "pareja.jpg",
+        "video": "PUBG.mp4",
+        "position": "1"
+    },
+    {
+        "nombre": "Hobbie1",
+        "descripcion": "ver doramas",
+        "imagen": "la voz de tu corazon.jpg",
+        "video": "Nintendo nos vende CARTÓN.mp4",
+        "position": "0"
+    },
+    {
+        "nombre": "Hobbie2",
+        "descripcion": "jugar videojueguos",
+        "imagen": "yoshi.jpg",
+        "video": "PREGUNTAS PROHIBIDAS A COREANOS!!.mp4",
+        "position": "1"
+    },
+    {
+        "nombre": "Hobbie3",
+        "descripcion": "ver videos en youtube",
+        "imagen": "risaotani.jpg",
+        "video": "ASÍ ES LA VIDA DE RANCHO.mp4",
+        "position": "0"
+    },
+    {
+        "nombre": "Hobbie4",
+        "descripcion": "leer manga",
+        "imagen": "max.jpg",
+        "video": "EVELYNN en 2 MINUTOS.mp4",
+        "position": "1"
+    },
+    {
+        "nombre": "Hobbie5",
+        "descripcion": "hacer ejercicio",
+        "imagen": "yoshi.jpg",
+        "video": "Nintendo nos vende CARTÓN.mp4",
+        "position": "0"
+    }]
+}

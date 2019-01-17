@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script>
+        var mascotas = [
+            {
+                nombre: "Peque",
+                edad_máxima: 8,
+                tipo: "Perro",
+                raza: "Criollo",
+                color: "beige con melon",
+                sexo: "H",
+                existe: false
+            },
+            {
+                nombre: "Guiru",
+                edad_máxima: "3 meses",
+                tipo: "Perro",
+                raza: "Criollo",
+                color: "Blanco",
+                sexo: "M",
+                existe: false
+            },
+            {
+                nombre: "Garras",
+                edad_máxima: 10,
+                tipo: "Perro",
+                raza: "Rottweiler con Pastor Aleman",
+                color: "Negro con cafe",
+                sexo: "M",
+                existe: false
+            },
+            {
+                nombre: "Baxy",
+                edad_máxima: "3 meses",
+                tipo: "Conejo",
+                raza: "Común",
+                color: "Atigrado",
+                sexo: "H",
+                existe: false
+            },
+            {
+                nombre: "Pollito",
+                edad_máxima: 1,
+                tipo: "Pollo",
+                raza: "Golon",
+                color: "Blanco",
+                sexo: "M",
+                existe: false
+            },
+            {
+                nombre: "Spike",
+                edad_máxima: 2,
+                tipo: "Perro",
+                raza: "Criollo",
+                color: "Cafe, con detalles negro y blanco",
+                sexo: "M",
+                existe: false
+            },
+            {
+                nombre: "Pequeña",
+                edad_máxima: 6,
+                tipo:  "Perro",
+                raza:  "Chihuahua",
+                color: "Crema",
+                sexo:  "H",
+                existe: true
+            },
+            {
+                nombre: "Bombon",
+                edad_máxima: "8 meses",
+                tipo: "Conejo",
+                raza: "Enano",
+                color: "Blanco con manchas negras",
+                sexo: "H",
+                existe: false
+            },
+            {
+                nombre: "Matilda",
+                edad_máxima: 1,
+                tipo:  "Perro",
+                raza:  "Bull Terrier Ingles",
+                color: "Blanco con manchas atigradas",
+                sexo:  "H",
+                existe: true
+            }
+        ];
+        console.log(mascotas);
+        
+        var x = 0;
+        //operadores condicionales
+        //< > == != <= >=
+        var esMenor = x <10;
+        console.log( esMenor);
+
+        console.log(mascotas);
+
+
+        //funcionalidad de js
+        //Sentencia FOR
+        var numElementos = mascotas.length;
+        for(var i=1; i<8 ; i++){
+            
+            var mascota = mascotas[i];
+            //console.log(mascota);
+            console.log("Nombre:" + mascota.nombre + "," + " " + "Edad:" + mascota.edad_máxima + "," + " " + "Sexo:" + mascota.sexo);
+        }
+        /*
+        for(var i=0; i<=4; i++){
+            var primMitad = mascotas[i];
+            console.log(primMitad);
+        }
+        for(var i=5; i<=mascotas.length-1;i++){
+            var segMitad = mascotas[i];
+            console.log(segMitad);
+        }*/
+
+        for (var i=0; i<=8; i++){
+            var primMitad = mascotas[i];
+            var segMitad  = mascotas[i];
+            if(i<=mascotas.length/2){
+                console.log(primMitad);
+            }else{
+                console.log(segMitad);        
+            
+            }
+        }
+        var numElementos = mascotas.length / 2;
+        for(var i=0; i<numElementos; i++){
+
+            var mascotaInicio = mascotas[i];
+            var mascotaFin = mascotas[numElementos - 1 - i];
+            console.log("Nombre:" + mascotaInicio.nombre + "," + " " + "Edad:" + mascotaInicio.edad_máxima + "," + " " + "Sexo:" + mascotaInicio.sexo);
+            console.log("Nombre:" + mascotaFin.nombre + "," + " " + "Edad:" + mascotaFin.edad_máxima + "," + " " + "Sexo:" + mascotaFin.sexo);
+        }
+        
+        
+        /* IF ELSE
+            sentencia selectiva
+            un If siempre va ligado a una operacion condicional
+            SI condicion ENTONCES algo SI NO condicion otra_cosa*/
+
+        if(condicion)
+        {
+            //algo
+        }
+        else
+        {
+        
+            //otra
+            //donde otra puede ser una sentencia selectiva anidada
+            /* 
+            else if (condicion)
+            {
+
+            }
+            */
+
+        }
+        
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

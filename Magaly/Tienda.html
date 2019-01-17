@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carrito</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Estilos5.css">
+	<script type="text/javaScript" src="cdigo.js"> </script>
+
+</head>
+</head>
+<body>
+	<div class="carrito">
+		<b><label for="Name">Carrito de compra:</label></b></br>
+		<label for="Name">CheeseCake</label>
+		<p id="a">0</p>
+		<label for="Name">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pesos</label></br>
+		<label for="Name">Chocolate</label>
+		<p id="b">0</p>
+		<label for="Name">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pesos</label></br>
+        <label for="Name">Tres leches</label>
+		<p id="c">0</p>
+		<label for="Name">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pesos</label></br>
+		<label for="Name">Coco</label>
+		<p id="d">0</p>
+		<label for="Name">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Pesos</label></br>
+		<label for="Name">Rollo Mango</label>
+		<p id="e">0</p>
+		<label for="Name">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pesos</label></br>
+		<label for="Name">Subtotal</label>
+		<p id="f">0</p>
+		<label for="Name">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pesos</label></br>
+		<label for="Name">Iva</label>
+		<p id="g">0</p>
+		<label for="Name">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Pesos</label></br>
+		<label for="Name">Total</label>
+		<p id="h">0</p>
+		<label for="Name">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pesos</label></br>
+		<input type="button" name="FirstName" onclick="compra();" value="Realizar pedido">
+		<input type="button" name="FirstName" onclick="Borrar();" value="Borrar pedido">
+
+	</div>
+
+		 <table class="cuadro" id="cuadro">
+          <tr class="Cheese" >
+            <td ><img src= "cheesecake.png" class="imagen" width="150px" height="150px"/></td> 
+          </tr>
+          <tr> 
+          	<td id="quesito" value="CheeseCake">CheeseCake</br>Frutos Rojos</td>
+           </tr>
+           <tr>
+           		<td>Costo: $280 Cant: <input type="text" id="Cheese" name="Cheese" value="0"><br> </td>
+           </tr>
+           <tr>
+           		<td><input type="button" name="FirstName" onclick="operacion1();"  value="Añadir al carrito"></td>
+           </tr>
+     	  </table>
+           <table class="choco">
+          <tr >
+            <td ><img src= "chocake.jpg" class="imagen" width="150px" height="150px"/></td> 
+          </tr>
+          	<tr> 
+          		<td id="chocolatito">Pastel</br>Chocolate</td>
+           </tr>
+           <tr>
+           		<td>Costo: $300 Cant: <input type="text" name="FirstName" id="choco" value="0"><br> </td>
+           </tr>
+           <tr>
+           		<td><input type="button" name="FirstName" onclick="operacion1();" value="Añadir al carrito"></td>
+           </tr>
+           </table>
+           <table class="tresL">
+            <td ><img src= "tresLeches.jpg" class="imagen" width="150px" height="150px"/></td> 
+          </tr>
+          <tr> 
+          	<td id="lechita">Pastel</br>Tres Leches</td>
+           </tr>
+           <tr>
+           		<td>Costo: $290 Cant: <input type="text" name="FirstName" id="tresL" value="0"><br> </td>
+           </tr>
+           <tr>
+           		<td><input type="button" name="FirstName" onclick="operacion1();" value="Añadir al carrito"></td>
+           </tr>
+           </table>
+           <table class="coCa">
+            <td ><img src= "cocoCake.jpg" class="imagen" width="150px" height="150px"/></td> 
+          </tr>
+          <tr> 
+          	<td id="coquito">Pastel</br>Coco</td>
+           </tr>
+           <tr>
+           		<td>Costo: $300 Cant: <input type="text" name="FirstName" id="coco" value="0"><br> </td>
+           </tr>
+           <tr>
+           		<td><input type="button" name="FirstName" onclick="operacion1();" value="Añadir al carrito"></td>
+           </tr>
+           	</table>
+           	<table class="roMa">
+            <td ><img src= "rolloMango.jpg" class="imagen" width="150px" height="150px"/></td> 
+          </tr>
+          <tr> 
+          	<td id="manguito">Rollo</br>Mango</td>
+           </tr>
+           <tr>
+           		<td>Costo: $500 Cant: <input type="text" name="FirstName" id="Mango" value="0"><br> </td>
+           </tr>
+           <tr>
+           		<td><input type="button" name="FirstName" onclick="operacion1();" value="Añadir al carrito"></td>
+           </tr>
+          </table>
+
+
+</body>
+</html>

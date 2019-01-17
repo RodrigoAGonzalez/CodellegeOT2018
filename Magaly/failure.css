@@ -1,0 +1,21 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+.Magaly{
+    background: pink;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.Leija{
+    background: lightcoral;
+    width: 50%;
+    height: 100%;
+    float: right;
+}

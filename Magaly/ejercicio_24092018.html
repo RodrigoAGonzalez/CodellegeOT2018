@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 24/09/2018</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        body{
+            background: rgb(182, 174, 174);
+        }
+        h1{
+            text-align: center;
+            color: rgb(248, 109, 59);
+        }
+        .cuadro{
+            position: relative;
+            background: black;
+            width: 30vw;
+            height: 30vw;
+            margin-left: 35vw;
+            margin-top: 35vh;
+
+        
+        }
+        .cuadrito{
+            background: orange;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+        }
+        .Left-top{
+            top:0;
+            left:0;
+        }
+        .Right-top{
+            top:0;
+            right:0;
+        }
+        .Left-bottom{
+            bottom:0;
+            left:0;
+        }
+        .Right-bottom{
+            bottom:0;
+            right:0;
+        }  
+        .cuadrito:hover{
+            background: greenyellow;
+        } 
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio 24/09/2018</h1>
+    </header>
+
+    <main>
+        <div class="cuadro negro">
+        <div class="cuadrito Left-top"></div>
+        <div class="cuadrito Right-top"></div>
+        <div class="cuadrito Left-bottom"></div>
+        <div class="cuadrito Right-bottom"></div>
+    </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+
+</html>

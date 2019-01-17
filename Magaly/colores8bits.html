@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8bits</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .Row {
+            width: 100%;
+            height: 100px;
+            display: block;
+        }
+
+        .pink {
+            background: pink;
+        }
+
+        .morado {
+            background: rgb(204, 46, 204);
+        }
+
+        .celeste {
+            background: rgb(113, 213, 238);
+        }
+
+        .green {
+            background: greenyellow;
+        }
+    </style>
+</head>
+
+<body onload="Gen()">
+    <header></header>
+
+    <main>
+        <div id="rows"></div>
+    </main>
+
+    <footer></footer>
+    
+</body>
+<script>
+    function Gen() {
+        var r = 0, g = 0, b = 0;
+        var max = 768;
+        var working= true;
+        var count = 0;
+        var div = document.getElementById('rows');
+
+        var color = setInterval(() =>{
+            if(!working)
+                clearInterval(color);
+            var renglon = document.createElement('div');
+            renglon.className = "Row";
+            renglon.style.background = "rgb(" + r + "," + g + "," + b + ")";
+
+            r = r == 255 ? 255 : r + 1;
+            if(r==255)
+                g = g == 255 ? 255 : g + 1;
+
+            if(r==255 && g==255)
+            b = b == 255 ? 255 : b + 1;
+            
+            div.appendChild(renglon);
+            document.title ="Gen: " + count++;
+            working = count < max;
+        }, 1);        
+    }
+</script>
+
+</html>

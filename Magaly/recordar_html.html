@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recordar</title>
+    <style>
+        h1, main, footer{
+            text-align: center;
+        }
+
+        #nombres{
+            border: 2px solid pink;
+            width: 360px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            min-height: 100px;
+            text-align: left;
+            padding: 8px;
+
+        }
+
+        input[type=text]{
+            width: 250px;
+            height: 30px;
+            margin-right: 10px;
+            box-sizing: border-box;
+            
+        }
+        button{
+            width: 100px;
+            height: 30px;
+        }
+        .etiquetaNombre{
+            border-bottom: solid 1px rgb(78, 202, 240);
+            height: 70px;
+            text-indent: 1rem;
+            line-height: 22px;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-bottom: 8px;
+            margin-top: 10px;
+            
+        }
+        .imagen{
+            width: 5rem;
+            height: 4rem;
+            
+            
+        }
+    </style>
+    <script>
+    function agregarNombre(){
+        var nombres = document.getElementById('nombres');
+        var nombre = document.getElementById('nombre');
+        var nombrePersona = nombre.value;
+
+        nombres.innerHTML = nombres.innerHTML + ' ' + '<img src="catss.jpg" class="imagen" align = "left">'+
+                                '<div class="etiquetaNombre">' + nombrePersona + '</div>';
+    }
+    /*function agregarImagen(){
+        var imagen = imagen.document.getElementById('imagen');
+        imagen.innerHTML = '<img src="catss.jpg" />'
+    }*/
+
+    
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Recordar Html (Actividad Javascript eventos)</h1>
+    </header>
+    <main>
+        <input type="text" name="escribir" id="nombre" value=":3">
+        <button onclick="agregarNombre()">Create</button>
+        <div></div>
+        <div id="nombres">
+            
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        @Magaly Leija
+    </footer>
+</body>
+</html>

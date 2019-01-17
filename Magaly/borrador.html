@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cumpleaños</title>
+    <link rel="stylesheet" href="cumpleaños_definitivo.css" type="text/css" />
+    <script>
+        var maestros = [{
+                nombre: "Rodrigo Arturo",
+                apellido: "Gonzalez Goytia",
+                fecha: "21 de agosto de 1992",
+                hobbies: "-----",
+                imagen: "<img src= 'pikachu.jpg'>"
+            },
+            {
+                nombre: "Kevin",
+                apellido: "Martín Del Campo Fernandez",
+                fecha: "14 de abril de 1995",
+                hobbies: "-----",
+                imagen: "<img src= 'pikachu.jpg'>"
+            }
+        ];
+
+        function GenerarTarjetas() {
+            var maestro = document.getElementById('maestros');
+            maestros.innerHTML += "<article id='maestros'>" +
+                "<div class='card'>" +
+                "<div class='izquierda'>" +
+                "</div>" +
+                "<div class='derecha'>" +
+                '<h3>' + maestros.nombre + '</h3>' +
+                '<h3>' + maestros.apellido + '</h3>' +
+                '<h6>' + maestros.fecha + '</h6>' +
+                '<h5>' + maestros.hobbies + '</h5>' +
+                "</div>" +
+                "</div>" +
+                "<div class='card'>" +
+                "<div class='izquierda'>" +
+                "</div>" +
+                "<div class='derecha'>" +
+                '<h3>' + maestros.nombre + '</h3>' +
+                '<h3>' + maestros.apellido + '</h3>' +
+                '<h6>' + maestros.fecha + '</h6>' +
+                '<h5>' + maestros.hobbies + '</h5>' +
+                '</div>'
+            '</div>'
+            '</article>'
+
+        }
+    </script>
+</head>
+
+<body onload='GenerarTarjetas()'>
+    <header>
+        <h1 class="cabeza">Cumpleaños CodellegeOT2018</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Cumpleaños Maestros:</h2>
+            <article id="maestros">
+                <div class="card">
+                    <div class="izquierda">
+                    </div>
+                    <div class="derecha">
+                        <h3>Kevin Martin del Campo Fernandez</h3>
+                        <h6>14 de abril de 1995</h6>
+                        <h5>hobbies:</h5>
+                        <p>-------</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="izquierda">
+                    </div>
+                    <div class="derecha">
+                        <h3>Rodrigo Arturo Gonzalez Goytia</h3>
+                        <h6>21 de agosto de 1992</h6>
+                        <h5>hobbies:</h5>
+                        <p>-------</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

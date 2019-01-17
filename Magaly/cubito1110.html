@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .c{
+            position: absolute;
+            
+            background: gray;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+  
+<script>
+    var left = 0, top = 0;
+    var w = 50, h = 50;
+    var maxW; maxH;
+    var rastros = new Array;
+   
+    var hFactor = -1;
+    var wFactor = -1;
+    var fps = 1000/120;
+
+    var cubito = document.createElement("div");
+    cubito.className = "c";
+
+    setInterval(function(){
+        maxW = window.innerWidth;
+        maxH = window.innerHeight;
+        var rastro = document.createElement("div");
+        rastro.className = "rastro";
+        rastro.style.left = left;
+        rastro.style.top = _top;
+        rastros.push( rastro );
+
+        if( _top == maxH - h)
+        {
+            hFactor *= -1;
+        }
+        if(_top == 0)
+        {
+            hFactor *= -1;
+        }
+        
+
+
+    }, fps);
+</script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>If</title>
+    <script>
+        var mascotas = [
+            {
+                nombre: "Peque",
+                edad_máxima: 8,
+                tipo: "Perro",
+                raza: "Criollo",
+                color: "beige con melon",
+                sexo: "H",
+                existe: false
+            },
+            {
+                nombre: "Guiru",
+                edad_máxima: "3 meses",
+                tipo: "Perro",
+                raza: "Criollo",
+                color: "Blanco",
+                sexo: "M",
+                existe: false
+            },
+            {
+                nombre: "Garras",
+                edad_máxima: 10,
+                tipo: "Perro",
+                raza: "Rottweiler con Pastor Aleman",
+                color: "Negro con cafe",
+                sexo: "M",
+                existe: false
+            },
+            {
+                nombre: "Baxy",
+                edad_máxima: "3 meses",
+                tipo: "Conejo",
+                raza: "Común",
+                color: "Atigrado",
+                sexo: "H",
+                existe: false
+            },
+            {
+                nombre: "Pollito",
+                edad_máxima: 1,
+                tipo: "Pollo",
+                raza: "Golon",
+                color: "Blanco",
+                sexo: "M",
+                existe: false
+            },
+            {
+                nombre: "Spike",
+                edad_máxima: 2,
+                tipo: "Perro",
+                raza: "Criollo",
+                color: "Cafe, con detalles negro y blanco",
+                sexo: "M",
+                existe: false
+            },
+            {
+                nombre: "Pequeña",
+                edad_máxima: 6,
+                tipo:  "Perro",
+                raza:  "Chihuahua",
+                color: "Crema",
+                sexo:  "H",
+                existe: true
+            },
+            {
+                nombre: "Bombon",
+                edad_máxima: "8 meses",
+                tipo: "Conejo",
+                raza: "Enano",
+                color: "Blanco con manchas negras",
+                sexo: "H",
+                existe: false
+            },
+            {
+                nombre: "Matilda",
+                edad_máxima: 1,
+                tipo:  "Perro",
+                raza:  "Bull Terrier Ingles",
+                color: "Blanco con manchas atigradas",
+                sexo:  "H",
+                existe: true
+            }
+        ];
+
+        var numElementos = mascotas.length;
+        for( var i = 0; i < numElementos; i ++ )
+        {
+            var mascota = mascotas[i];
+            if( mascota.sexo == "M" && !mascota.existe)
+            {
+                console.log( mascota );
+            }
+        }
+    /*
+    var x = 300;
+    if( x > 300){
+        console.log("Soy mayor que 300");
+    }
+    else if( x == 300 ){
+        console.log("Soy igual a 300");
+    }
+    else{
+        console.log("Soy menor que 300");
+    } */ 
+
+    /*
+    var x = "a";
+
+    if( x == "a" || x == "e" || x == "i" || x == "o" || x == "u")
+    {
+        console.log("Vocal");
+    }
+    else
+    {
+        console.log("No es vocal");
+    } */
+    /*
+    var x = 50;
+    if( x > 20 && x <100 && x % 2 == 0)
+    {
+        console.log("El numero es par, mayor a 20 y menor a 100");
+    }
+    else
+    {
+        console.log("No es lo que pedi");
+    }
+    */ 
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

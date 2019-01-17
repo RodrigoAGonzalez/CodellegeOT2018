@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejercicio InnerHTML</title>
+    <style>
+        .bloque{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+
+    var datos = " " +
+        "<div>" +  
+                "<span class = 'bloque'>Magaly Guadalupe Leija Sánchez</span>" +
+                " "+
+                "<span class = 'bloque'>Edad: 22</span>" +
+                " "+
+                "<span>03/03/1996</span>" +
+        "</div>";
+    document.body.innerHTML += datos;
+    //document.body.innerHTML = document.body.innerHTML + datos;   ---> esta linea hace lo mismo 
+
+</script>
+</html>
